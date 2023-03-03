@@ -25,11 +25,4 @@ jobs:
         run: pip install requests beautifulsoup4 pandas webdriver-manager selenium
       - name: Run the scraping script
         run: python main.py
-      - name: Commit and push if content changed
-        run: |-
-          git config user.name "abdullahcayde"
-          git config user.email "abdullahcay26@gmail.com"
-          git add -A
-          timestamp=$(date -u)
-          git commit -m "Latest data: ${timestamp}" || exit 0
-          git push
+      
