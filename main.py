@@ -174,10 +174,10 @@ df['date'] = time_
 job_name2 = job_name.replace(' ', '_')
 df['search_title'] = job_name2
 
-path = '/Users/macbook/Desktop/projects/Github_Repositories/Workflow_github/data'
+#path = '/Users/macbook/Desktop/projects/Github_Repositories/Workflow_github/data'
 job_name3 = job_name.replace(' ', '-')
 time_ = datetime.today().strftime('%Y-%m-%d')
-df.to_csv(f'{path}/{job_name3}-{time_}.csv', index=False)
+df.to_csv(f'{job_name3}-{time_}.csv', index=False)
 
 # 6 - Quit
 end =datetime.now() 
