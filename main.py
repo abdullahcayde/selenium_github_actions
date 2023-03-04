@@ -85,9 +85,9 @@ start=datetime.now()
 # Link Descriptions
 link_original_stepstone = 'https://www.stepstone.de/jobs/data-analyst/in-rietberg?radius=50&page=2'
 website_name = 'stepstone'
-job_name = 'Data Engineer'
+#job_name = 'Data Engineer'
 #job_name = 'Data Analyst'
-#job_name = 'Data Scientist'
+job_name = 'Data Scientist'
 ort_ = 'Rietberg'
 radius = 50
 page_number = 1
