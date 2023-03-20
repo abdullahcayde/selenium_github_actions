@@ -105,11 +105,7 @@ driver.get(link)
 wait(5)
 sleep(2)
 print('Go to Website')
-#  3 - ActionChain Object created
-# 3.1 - Click Banned Accept
-ID = 'ccmgt_explicit_accept'
-click_bann_byID(ID)
-print('Banned')
+
 
 
 # 4 -  Take Infos from Page
@@ -197,11 +193,6 @@ driver.get(link)
 wait(10)
 sleep(1)
 
-
-#  3 - ActionChain Object created
-# 3.1 - Click Banned Accept
-ID = 'consent-accept-button'
-click_bann_byID(ID)
 
 
 # 4 -  Take Infos from Page
