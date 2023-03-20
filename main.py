@@ -73,8 +73,22 @@ page_number = 1
 
 
 #  1 - Create Driver
-Path = '/Users/macbook/Desktop/projects/Github_Repositories/Trainings/web_scpraing_portfolio_deneme/chromedriver'
-driver = webdriver.Chrome(Path)
+chrome_service = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+
+chrome_options = Options()
+options = [
+    "--headless",
+    "--disable-gpu",
+    "--window-size=1920,1200",
+    "--ignore-certificate-errors",
+    "--disable-extensions",
+    "--no-sandbox",
+    "--disable-dev-shm-usage"
+]
+for option in options:
+    chrome_options.add_argument(option)
+
+driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 print('Create Driver')
 
 
@@ -155,8 +169,21 @@ page_number = 1
 
 
 #  1 - Create Driver
-Path = '/Users/macbook/Desktop/projects/Github_Repositories/Trainings/web_scpraing_portfolio_deneme/chromedriver'
-driver = webdriver.Chrome(Path)
+
+chrome_options = Options()
+options = [
+    "--headless",
+    "--disable-gpu",
+    "--window-size=1920,1200",
+    "--ignore-certificate-errors",
+    "--disable-extensions",
+    "--no-sandbox",
+    "--disable-dev-shm-usage"
+]
+for option in options:
+    chrome_options.add_argument(option)
+
+driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
 
 #  2 - Go to Website
@@ -165,7 +192,7 @@ ort_link = ort_.lower()
 link = f'https://www.xing.com/jobs/search?keywords=Data%20Engineer&location=Rietberg&page=1&radius=100&sort=date'
 driver.get(link)
 wait(10)
-sleep(2)
+sleep(1)
 
 
 #  3 - ActionChain Object created
