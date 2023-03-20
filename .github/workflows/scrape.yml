@@ -24,7 +24,7 @@ jobs:
       - name: Install a new Chromium
         run: sudo apt install -y chromium-browser
       - name: Install all necessary packages
-        run: pip install requests numpy time datetime pandas webdriver-manager selenium
+        run: pip install requests numpy pandas webdriver-manager selenium
       - name: Run the scraping script
         run: python main.py
       - name: Commit and push if content changed
