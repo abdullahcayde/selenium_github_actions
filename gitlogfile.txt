@@ -282,3 +282,7 @@
 2023-Jun-06-12:19:44,end_stepstone
 2023-Jun-06-12:19:44,start_xing
 2023-Jun-06-12:19:52,end_xing
+2023-Jun-08-12:18:15,start_stepstone
+2023-Jun-08-12:18:57,end_stepstone
+2023-Jun-08-12:18:58,start_xing
+2023-Jun-08-12:19:05,end_xing
